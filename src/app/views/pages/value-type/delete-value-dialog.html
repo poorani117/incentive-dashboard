@@ -1,0 +1,10 @@
+<div class="container">
+	<h1 mat-dialog-title>Delete Value Type</h1>
+	<div mat-dialog-content >
+		<p>Are you sure you want to delete this particular Value Type?</p>
+	</div>
+	<div mat-dialog-actions>
+		<button type="button" class="btn btn-info" (click)="onNoClick()">Close</button>
+		<button type="button" class="btn btn-danger" cdkFocusInitial (click)="deleteValueType(data)">Delete Value Type</button>
+	</div>
+</div>

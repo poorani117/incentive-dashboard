@@ -1,0 +1,55 @@
+.btn {
+    float: right;
+}
+.row {
+    width: 100%;
+}
+
+.edit-button {
+    background: white;
+    border: none; 
+    ::ng-deep .mat-icon {
+        color: #5d78ff;
+        background: white;
+    }
+}
+
+.delete-button {
+    background: white;
+    border: none; 
+    ::ng-deep .mat-icon {
+        color: #fd397a;
+        background: white;
+    } 
+}
+
+.kt-portlet__head-title{
+    font-size:1.75rem !important;
+}
+
+::ng-deep .kt-portlet__head-label{
+    h3 {
+        font-size:1.75rem !important;   
+    }
+}
+
+.mat-header-cell {
+    font-size: 15px !important;
+}
+
+.mat-dialog-title{
+    margin-top: 25px;
+}
+
+.mat-dialog-actions{
+    float:right;
+    .btn {
+        margin-right: 10px;
+    }
+}
+
+.mat-dialog-content{
+    p {
+        font-size:16px;
+    }
+}

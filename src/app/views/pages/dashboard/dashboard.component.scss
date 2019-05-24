@@ -1,0 +1,26 @@
+@import "../../../../assets/css/demo1/pages/general/wizard/wizard-3.css";
+:host {
+	::ng-deep {
+		ngb-tabset > .nav-tabs {
+			display: none;
+		}
+	}
+
+	.row {
+		width:100%;
+	}
+
+	.kt-wizard-v1__aside{
+		width:100%;
+	}
+	.kt-form {
+		padding: 0px !important;
+	}
+
+	.kt-portlet .kt-portlet__body{
+		padding: 0px !important;
+	}
+	.kt-wizard-v3__nav-item{
+		flex: 0 0 17% !important;
+	}
+}

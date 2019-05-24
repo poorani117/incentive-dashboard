@@ -1,0 +1,38 @@
+<div class="container">
+    <h1 mat-dialog-title>Edit County</h1>
+    <div mat-dialog-content c>
+        <div class="form-group row">
+            <div class="col-6">
+                <label for="example-text-input" class="col-form-label">County</label>
+                <div>
+                    <input class="form-control" type="text" [(ngModel)]="data.name" id="example-number-input">
+                    <!-- <div *ngIf="submitted && zipcodeForm.controls['zipcode'].errors" class="invalid-feedback">
+                        <div *ngIf="zipcodeForm.controls['zipcode'].errors.required">Zipcode is required</div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="col-6">
+                <label for="example-text-input" class="col-form-label">County Short Name</label>
+                <div>
+                    <input class="form-control" type="text" id="example-text-input" [(ngModel)]="data.short_name"  >
+                    <!-- <div *ngIf="submitted && zipcodeForm.controls['countyId']errors" class="invalid-feedback">
+                        <div *ngIf="zipcodeForm.controls['countyId'].errors.required">County Option is required</div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="col-6">
+                <label for="example-text-input" class="col-form-label">StateId</label>
+                <div>
+                    <input class="form-control" type="text" id="example-text-input" [(ngModel)]="data.state_id"  >
+                    <!-- <div *ngIf="submitted && zipcodeForm.controls['countyId']errors" class="invalid-feedback">
+                        <div *ngIf="zipcodeForm.controls['countyId'].errors.required">County Option is required</div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div mat-dialog-actions>
+      <button type="button" class="btn btn-warning" (click)="onNoClick()">Close</button>
+      <button type="button" class="btn btn-info" cdkFocusInitial (click)="editCounty(data)">Save changes</button>
+    </div>
+</div>

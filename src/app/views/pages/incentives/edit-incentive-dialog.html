@@ -1,0 +1,20 @@
+<div class="container">
+    <h1 mat-dialog-title>Edit Incentive Type</h1>
+    <div mat-dialog-content c>
+        <div class="form-group row">
+            <div class="col-6">
+                <label for="example-text-input" class="col-form-label">Incentive Type</label>
+                <div>
+                    <input class="form-control" type="text" [(ngModel)]="data.name" id="example-text-input">
+                    <!-- <div *ngIf="submitted && zipcodeForm.controls['zipcode'].errors" class="invalid-feedback">
+                        <div *ngIf="zipcodeForm.controls['zipcode'].errors.required">Zipcode is required</div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div mat-dialog-actions>
+      <button type="button" class="btn btn-warning" (click)="onNoClick()">Close</button>
+      <button type="button" class="btn btn-info" cdkFocusInitial (click)="editIncentive(data)">Save changes</button>
+    </div>
+</div>

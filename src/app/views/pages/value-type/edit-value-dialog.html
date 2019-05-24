@@ -1,0 +1,38 @@
+<div class="container">
+    <h1 mat-dialog-title>Edit Value Type</h1>
+    <div mat-dialog-content c>
+        <div class="form-group row">
+            <div class="col-6">
+                <label for="example-text-input" class="col-form-label">ValueType</label>
+                <div>
+                    <input class="form-control" type="text" [(ngModel)]="data.name" id="example-text-input">
+                    <!-- <div *ngIf="submitted && zipcodeForm.controls['zipcode'].errors" class="invalid-feedback">
+                        <div *ngIf="zipcodeForm.controls['zipcode'].errors.required">Zipcode is required</div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="col-6">
+                <label for="example-text-input" class="col-form-label">Performance Payment</label>
+                <div>
+                    <input class="form-control" type="text" id="example-text-input" [(ngModel)]="data.perfPayment"  >
+                    <!-- <div *ngIf="submitted && zipcodeForm.controls['countyId']errors" class="invalid-feedback">
+                        <div *ngIf="zipcodeForm.controls['countyId'].errors.required">County Option is required</div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="col-6">
+                <label for="example-text-input" class="col-form-label">Performance Base</label>
+                <div>
+                    <input class="form-control" type="text" id="example-text-input" [(ngModel)]="data.paymentBased"  >
+                    <!-- <div *ngIf="submitted && zipcodeForm.controls['countyId']errors" class="invalid-feedback">
+                        <div *ngIf="zipcodeForm.controls['countyId'].errors.required">County Option is required</div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div mat-dialog-actions>
+      <button type="button" class="btn btn-warning" (click)="onNoClick()">Close</button>
+      <button type="button" class="btn btn-info" cdkFocusInitial (click)="editValueTypes(data)">Save changes</button>
+    </div>
+</div>
